@@ -368,6 +368,10 @@ window.addEventListener('DOMContentLoaded', () => {
         current = document.querySelector('#current');
     let slideIndex = 1;
 
+    showSlides(slideIndex);
+
+    total.textContent = slides.length < 10 ? `0${slides.length}` : slides.length;
+
     function showSlides(n) {
         if (n > slides.length) {
             slideIndex = 1;
@@ -381,9 +385,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
         slides[slideIndex - 1].style.display = 'block';
 
+        current.textContent = slides.length < 10 ? `0${slideIndex}` : slideIndex;
+
     }
 
-    showSlides(slideIndex);
 
     function plusSlides(n) {
         showSlides(slideIndex += n);
