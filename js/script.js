@@ -359,4 +359,8 @@ window.addEventListener('DOMContentLoaded', () => {
     //     .then(data => data.json())
     //     .then(res => console.log(res));
 
+    // Slider (Exercise 92)
+
+    const slider = document.querySelectorAll('.offer__slide');
+
 });
