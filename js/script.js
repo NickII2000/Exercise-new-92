@@ -361,6 +361,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Slider (Exercise 92)
 
-    const slider = document.querySelectorAll('.offer__slide');
+    const slider = document.querySelectorAll('.offer__slide'),
+        prev = document.querySelector('.offer__slider-prev'),
+        next = document.querySelector('offer__slider-next');
 
 });
